@@ -1,28 +1,42 @@
+# ROTANIMERT
+
 The project for infecting elf file and fork a key logger process.
-ELFsrc  : the programs for infecting elf.
-		include: 
-			infector.c:  	The program to infect the first virus.
-			fullnelson.c:	The program to get root.
-			fullnelson.h:	The interface for get root.
-			Tools:			Some tools are used in the project.
-			virusBody:		The virus body what we want to insert to another elf.
 
-getRoot : the programs for get root.
-		include :
-			fullnelson.c： 	
-			fullnelson.h:
+## ELFsrc
 
-hideprocess: hide process by share library.
-		processhider.c:  the main program for hide process.
-		
-ProcessHider_Modules: hide process by LKM.
+The programs for infecting elf.
 
-skeylogger	: programs for logging the input by keyboard.
+1. infector.c: The program to infect the first virus.
+2. fullnelson.c: The program to get root.
+3. fullnelson.h: The interface for get root.
+4. Tools: Some tools are used in the project.
+5. virusBody: The virus body what we want to insert to another elf.
 
-test  		: Some test file for infecting.
+## getRoot
 
-There are some path in the virus, you should change it before you use:
+The programs for get root.
 
-virusBody : the key logger file path.
-skeylogger: the address for skeylogger.log and the target computer's IP.
- 		
+1. fullnelson.c
+2. fullnelson.h
+
+## hideprocess
+
+hide process by share library.
+
+1. processhider.c:  the main program for hide process.
+
+2. ProcessHider_Modules: hide process by LKM.
+
+3. skeylogger: programs for logging the input by keyboard.
+
+## test
+
+Some test file for infecting.
+
+Attation: There are some path in the virus, you should change it before you use:
+
+## virusBody
+
+The key logger file path.
+
+1. skeylogger: the address for skeylogger.log and the target computer's IP.
